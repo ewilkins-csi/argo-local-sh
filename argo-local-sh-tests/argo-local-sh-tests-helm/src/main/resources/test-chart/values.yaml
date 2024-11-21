@@ -1,0 +1,5 @@
+
+image:
+  name: argo-local-sh-tests-docker
+  imagePullPolicy: IfNotPresent
+  dockerRepo: ""
