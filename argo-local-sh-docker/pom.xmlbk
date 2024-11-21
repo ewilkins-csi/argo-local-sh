@@ -17,8 +17,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>argo-local-sh-spark-worker-docker</module>
-        <module>argo-local-sh-policy-decision-point-docker</module>
+        <!-- TODO: Add docker modules here -->
     </modules>
 
     <build>

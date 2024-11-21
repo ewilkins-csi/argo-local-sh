@@ -17,7 +17,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spark-pipeline</module>
+        <!-- TODO: replace with your pipeline-specific modules here -->
     </modules>
 
     <build>

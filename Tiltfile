@@ -15,3 +15,22 @@ yaml = helm(
 k8s_yaml(yaml)
 
 # Add deployment resources here
+k8s_kind('SparkApplication', image_json_path='{.spec.image}')
+
+# policy-decision-point
+docker_build(  
+    ref='argo-local-sh-policy-decision-point-docker',
+    context='argo-local-sh-docker/argo-local-sh-policy-decision-point-docker',
+    build_args=build_args,
+    dockerfile='argo-local-sh-docker/argo-local-sh-policy-decision-point-docker/src/main/resources/docker/Dockerfile'
+)
+
+
+# spark-worker-image
+docker_build(  
+    ref='argo-local-sh-spark-worker-docker',
+    context='argo-local-sh-docker/argo-local-sh-spark-worker-docker',
+    build_args=build_args,
+    extra_tag='argo-local-sh-spark-worker-docker:latest',
+    dockerfile='argo-local-sh-docker/argo-local-sh-spark-worker-docker/src/main/resources/docker/Dockerfile'
+)
