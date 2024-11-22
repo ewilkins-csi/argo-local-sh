@@ -57,6 +57,39 @@
                     </execution>
                     <!-- Add executions for each deployment module -->
                     <execution>
+                        <id>pipeline-invocation-service</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate-sources</goal>
+                        </goals>
+                        <configuration>
+                            <basePackage>org.test</basePackage>
+                            <profile>pipeline-invocation-service-v2</profile>
+                            <!-- The property variables below are passed to the Generation Context and utilized
+                                 to customize the deployment artifacts. -->
+                            <propertyVariables>
+                                <appName>pipeline-invocation-service</appName>
+                            </propertyVariables>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>s3-local</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate-sources</goal>
+                        </goals>
+                        <configuration>
+                            <basePackage>org.test</basePackage>
+                            <profile>s3local-deploy-v2</profile>
+                            <!-- The property variables below are passed to the Generation Context and utilized
+                                 to customize the deployment artifacts. -->
+                            <propertyVariables>
+                                <appName>s3-local</appName>
+                            </propertyVariables>
+                        </configuration>
+                    </execution>
+
+                    <execution>
                         <id>spark-operator</id>
                         <phase>generate-sources</phase>
                         <goals>
