@@ -3,7 +3,7 @@ metadata:
 sparkApp:
   spec:
     type: Java
-    image: "docker-registry-PLACEHOLDER/repository/argo-local-sh-spark-worker-docker:latest"
+    image: "docker-registry-placeholder/repository/argo-local-sh-spark-worker-docker:latest"
     mainClass: org.test.SparkPipelineDriver
     mainApplicationFile: "local:///opt/spark/jobs/pipelines/spark-pipeline.jar"
     deps:

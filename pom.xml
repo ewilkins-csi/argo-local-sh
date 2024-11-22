@@ -35,7 +35,7 @@
     <pypi.project.repository.url>https://pypi-PLACEHOLDER/repository/</pypi.project.repository.url>
     <helm.publishing.repository.url>https://helm-PLACEHOLDER/repository</helm.publishing.repository.url>
     <helm.publishing.repository.name>PLACEHOLDER-helm</helm.publishing.repository.name>
-    <docker.project.repository.url>docker-registry-PLACEHOLDER/repository/</docker.project.repository.url>
+    <docker.project.repository.url>docker-registry-placeholder/repository/</docker.project.repository.url>
   </properties>
   <dependencyManagement>
     <dependencies>
