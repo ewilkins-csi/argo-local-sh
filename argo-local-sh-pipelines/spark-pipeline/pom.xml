@@ -226,6 +226,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+            <version>${version.junit}</version>
         </dependency>
         <dependency>
             <groupId>io.smallrye.reactive</groupId>
