@@ -5,4 +5,7 @@
 #################################################################################
 
 aissemble-localstack-chart:
-  buckets: []
+  buckets:
+    - name: spark-infrastructure
+      keys:
+      - warehouse/
