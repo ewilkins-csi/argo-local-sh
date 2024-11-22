@@ -62,3 +62,17 @@ yaml = helm(
        'argo-local-sh-deploy/src/main/resources/apps/spark-operator/values-dev.yaml']
 )
 k8s_yaml(yaml)
+yaml = helm(
+   'argo-local-sh-deploy/src/main/resources/apps/pipeline-invocation-service',
+   name='pipeline-invocation-service',
+   values=['argo-local-sh-deploy/src/main/resources/apps/pipeline-invocation-service/values.yaml',
+       'argo-local-sh-deploy/src/main/resources/apps/pipeline-invocation-service/values-dev.yaml']
+)
+k8s_yaml(yaml)
+yaml = helm(
+   'argo-local-sh-deploy/src/main/resources/apps/s3-local',
+   name='s3-local',
+   values=['argo-local-sh-deploy/src/main/resources/apps/s3-local/values.yaml',
+       'argo-local-sh-deploy/src/main/resources/apps/s3-local/values-dev.yaml']
+)
+k8s_yaml(yaml)
