@@ -18,6 +18,7 @@ startup() {
     helm upgrade --install $INFRA_NAME argo-local-sh-infrastructure \
       --values argo-local-sh-infrastructure/values.yaml \
       --values argo-local-sh-infrastructure/values-dev.yaml
+    sleep 5 #give time for the pod to be created (TODO: don't just guess a time, query cluster)
     if ! kubectl wait -A --for=condition=Ready pod -l app.kubernetes.io/name=argocd-server; then
       exit $?
     fi
