@@ -1,5 +1,5 @@
 def gitId = 'github'
-def gitRepo = 'test.org/test.git'
+def gitRepo = 'https://github.com/ewilkins-csi/argo-local-sh'
 // Set branch in the Jenkins Job or set here if not variable
 def gitBranch = 'refs/heads/${branch}'
 def projectDirectory = 'argo-local-sh'

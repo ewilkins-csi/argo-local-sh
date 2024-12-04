@@ -25,6 +25,7 @@
     <module>argo-local-sh-shared</module>
     <module>argo-local-sh-docker</module>
     <module>argo-local-sh-deploy</module>
+    <module>argo-local-sh-infrastructure</module>
     <module>argo-local-sh-tests</module>
   </modules>
   <properties>
@@ -85,9 +86,9 @@
     <!-- END: workaround to get maven build cache invalidation on new SNAPSHOTS of plugin dependencies -->
   </dependencies>
   <scm>
-    <connection>scm:git:test.org/test.git.git</connection>
-    <developerConnection>scm:git:test.org/test.git.git</developerConnection>
-    <url>test.org/test.git</url>
+    <connection>scm:git:https://github.com/ewilkins-csi/argo-local-sh.git</connection>
+    <developerConnection>scm:git:https://github.com/ewilkins-csi/argo-local-sh.git</developerConnection>
+    <url>https://github.com/ewilkins-csi/argo-local-sh</url>
     <tag>HEAD</tag>
   </scm>
   <distributionManagement>
