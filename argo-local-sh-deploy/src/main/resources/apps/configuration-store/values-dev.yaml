@@ -19,4 +19,4 @@ aissemble-configuration-store-chart:
   # Example: '/mnt/c' or '/mnt/wsl/rancher-desktop'
   configurationVolume:
     storageType: "local"
-    volumePathOnNode: "/update/this/path"
+    volumePathOnNode: "/Users/ewilkins/aiops/init-tests/oneoff/ptpa/argo-local-sh/configs"
